@@ -5,9 +5,15 @@ void main() {
 }
 
 class PerguntasApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text('Olá mundo'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Pergunta'),   
+        ),
+        body: Column(),
+      ),
     );
   }
 }
